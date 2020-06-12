@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TaskService } from 'src/app/services/task.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AppEgo';
+
+  constructor(
+    private taskService: TaskService
+  ) {} 
 }

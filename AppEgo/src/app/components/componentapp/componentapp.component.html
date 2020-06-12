@@ -1,0 +1,19 @@
+<table>
+
+    <tr>
+        <td>Todos</td>
+        <td>Autos</td>
+        <td>Pickups</td>
+        <td>SUVs</td>
+    </tr>
+
+    <tr *ngFor="let array of rta">
+        <td>{{array.id}}</td>
+        <td>{{array.Autos}}</td>
+        <td>{{array.Pickups}}</td>
+        <td>{{array.SUVs}}</td>
+    </tr>
+</table>
+
+<button (click)="getAllTasks()">getAllTasks()</button>
+<button (click)="getTask()">getTask()</button>
